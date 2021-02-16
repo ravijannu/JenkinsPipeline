@@ -20,13 +20,7 @@ pipeline {
 
     stage('deploy') {
       steps {
-        sh '''#!/bin/ksh
-# Tested with ksh version JM 93t+ 2010-03-05
-for i in {1..100}
-do
- # your-unix-command-here
- echo $i
-done'''
+        echo 'Deploy Step'
       }
     }
 
