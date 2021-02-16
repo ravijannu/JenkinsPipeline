@@ -20,7 +20,7 @@ pipeline {
 
     stage('deploy') {
       steps {
-        echo 'Deploy Step'
+        echo 'Deploy Development Bransh Step'
         input(message: 'WaitForApproval', id: 'Yes')
       }
     }
