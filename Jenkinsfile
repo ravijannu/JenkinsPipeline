@@ -11,7 +11,7 @@ pipeline {
 
         stage('test') {
           steps {
-            echo 'Testing Step'
+            echo '"Testing Step${companyname}"'
           }
         }
 
@@ -24,5 +24,8 @@ pipeline {
       }
     }
 
+  }
+  environment {
+    companyname = 'clickdata'
   }
 }
