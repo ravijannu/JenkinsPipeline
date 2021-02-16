@@ -21,6 +21,7 @@ pipeline {
     stage('deploy') {
       steps {
         echo 'Deploy Step'
+        input(message: 'WaitForApproval', id: 'Yes')
       }
     }
 
