@@ -11,7 +11,7 @@ pipeline {
 
         stage('test') {
           steps {
-            echo "Testing Step${companyname}"
+            echo "Testing Ravi Jannu Step${companyname}"
           }
         }
 
